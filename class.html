@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jQurey.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" style="border:2px solid black; position:relative;">
+        <h1 style="text-align:center;">Hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis atque earum sunt optio accusamus porro autem inventore harum, suscipit, quis alias, illum officiis nobis? Non? ipsum dolor sit amet consectetur adipisicing elit. Officia ea neque doloribus in ex? Doloremque quasi a veniam minima officiis.</p>
+    </div>
+    <br>
+    <input type="button" value="hide" id="btn">
+    <input type="button" value="show" id="btn2">
+    <input type="button" value="sliddwon2" id="SD2">
+    <input type="button" value="Animate" id="ANY">
+    <script>
+        $("#SD2").click(function(){
+            $("#box").slideUp(2000).slideDown(2000)
+        })
+        $("#ANY").click(function(){
+            $("#box").animate({left: "150px" , width: "350px" , height: "250px"},2000)
+        })   
+        $('#btn').click(function(){
+            $("#box").hide("................")
+        })
+
+        $('#btn2').click(function(){
+            $("#box").show("................")
+        })
+    </script>
+</body>
+</html>
